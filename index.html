@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <!--TITLE-->
+    <div class="title columns is-centered is-mobile">
+        <header>Weather Dashboard</header>
+    </div>
+
+    <!--Search DIV-->
+    <div class="columns">
+        <div class="search-func rows is-centered is-mobile" id="search">
+            <div class="column">
+                <div class="rows is-centered">
+                    <h2>Search a city name</h2>
+                </div>
+
+                <!--enter location-->
+                <div class="rows is-centered is-mobile" id="enter-location">
+                    <form action="location">
+                        <input type="text" id="searchTerm" />
+                    </form>
+                </div>
+                <!-- submit button -->
+                <div class="rows is-centered is-mobile">
+                    <button class="button" type="submit" id="btn" onclick="searchCity()">Search</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="column" >
+            <div class="current-day" id="current-day">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- location text -->
+    <div class="example-text is-mobile" id="results">
+        <!--Location result-->
+        <p>Enter with format exactly as shown: San Francisco, CA</p>
+    </div>
+
+    <!--Results-->
+
+    <!-- History List -->
+    <div class="columns">
+        <div class="hist-col is-mobile">
+            <div class="history" id="hist-display">
+                <h2 class="search-header">Search History</h2>
+            </div>
+        </div>
+
+        <!-- weather results -->
+        <div class="weather-col rows is-mobile">
+            <div class="rows">
+                <h2 class='weather-title'>5 Day forecast:</h2>
+                <div class="weather-result rows is-1" id="weather-display">
+                    <!-- 5 day forecast displayed here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add jQuery CDN for JavaScript functionalities -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Add moment.js for time and date reference -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--javascript-->
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>

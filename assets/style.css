@@ -1,0 +1,179 @@
+:root{
+    --first-color: #076023;
+    --second-color: #000000;
+    --third-color: #7e7e7e;
+    --fourth-color: #3e3d3a;
+    --fifth-color: #ffffff;
+    --sixth-color: #ffbd00;
+}
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.columns{
+    margin: 30px;
+}
+
+.title{
+    font-size: 100px;
+    color: var(--fifth-color); 
+    padding: 30px;
+    margin: 0px;
+    border-bottom: solid 5px var(--first-color);
+    background: linear-gradient(#4174c0, #1325e7);
+}
+
+.search-func{
+    width: 20%;
+    color: var(--second-color);
+    padding-bottom: 30px;
+    margin-left: 30px;
+    border: solid 2px var(--second-color);
+    background-color: var(--third-color);
+    box-shadow: 0 0 10px var(--first-color);
+    border-radius: 20px;
+}
+
+.search-func h2 {
+    margin-bottom: 20px;
+}
+
+.search-func input {
+    margin-bottom: 20px;
+}
+
+
+.button{
+    color: (var(--second-color));
+    background-color: var(--sixth-color);
+}
+
+.weather-col{
+    padding-right: 200px;
+    margin: 30px;
+    /* border: solid 2px var(--second-color); */
+    /* box-shadow: 0 0 10px var(--first-color); */
+    border-radius: 20px;
+}
+
+.example-text {
+    color: var(--fifth-color);
+    text-align: center;
+    font-size: larger;
+}
+
+.weather-item {
+    color: var(--sixth-color);
+    width: 75%;
+    margin: 25px 80px 80px 25px;
+    margin-block-end: 1em;
+    margin-inline-end: 5em;
+    display: flex;
+}
+
+.weather-title {
+    margin: 20px;
+    color: var(--second-color);
+    font-size: larger;
+    font-style: italic;
+    text-align: left;
+}
+
+.hist-col{
+    width: 30%;
+    color: var(--second-color);
+    padding: 100px;
+    border: solid 2px;
+    margin: 30px;
+    border: solid 2px var(--second-color);
+    background-color: var(--third-color);
+    box-shadow: 0 0 10px var(--first-color);
+    border-radius: 20px;
+}
+
+.hist-col .history {
+    width: 100%;
+}
+
+.current-day {
+    border-radius: 20px;
+    background: linear-gradient(#4174c0, #1325e7);
+}
+
+.current-day p {
+    margin-left: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    color: var(--sixth-color);
+}
+
+.current-day img {
+    margin-left: 50px;
+}
+
+.current-date {
+    font-size: 50px;
+}
+
+.card {
+    border-radius: 20px;
+    background: linear-gradient(#4174c0, #1325e7);
+    margin: 20px;
+}
+
+.card img {
+    margin-left: 25px;
+}
+
+.history{
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    /* padding-left: 300px; */
+}
+
+.search-header {
+    width: 100%;
+    font-size: larger;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.history img{
+    height: 600px;
+    width: 800px;
+    max-width: 80%;
+}
+
+.park-item {
+    color: var(--sixth-color);
+    border: solid 2px var(--second-color);
+    width: 800px;
+}
+
+.parkName{
+    background-color: var(--second-color);
+    text-align: center;
+    font-size: larger; 
+}
+
+.description{
+    background-color: var(--fourth-color);
+}
+
+.park-list {
+    color: var(--sixth-color);
+    font-size: larger;
+    font-style: italic;
+}
+
+.weather-result {
+    margin: 10px;
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
