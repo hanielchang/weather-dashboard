@@ -90,9 +90,10 @@ function searchCity(cityName) {
         // Only save if the cityName variable is empty, because cityName is a variable being used for button
         // listeners ONLY in the history list to recall a previous search. We don't want to create another button
         // by mistake for each time we hit a history button to recall a previous search! Also check if the searchTerm
-        // already exists in history. We don't want multiple buttons for the same city.
-        if (!cityName && !histArray.includes(searchTerm)) {
-          saveSearch(searchTerm);
+        // already exists in history. We don't want multiple buttons for the same city. Convert to lower case to avoid
+        // duplicates as well.
+        if (!cityName && !histArray.includes(searchTerm.toLowerCase())) {
+          saveSearch(searchTerm.toLowerCase());
         }
 
       }

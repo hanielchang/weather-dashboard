@@ -38,8 +38,12 @@ body{
 .search-func h2 {
     margin-bottom: 20px;
 }
+.search-func button {
+    width: 50%;
+}
 
 .search-func input {
+    width: 50%;
     margin-bottom: 20px;
 }
 
@@ -94,6 +98,10 @@ body{
 
 .hist-col .history {
     width: 100%;
+}
+
+.hist-col button {
+    margin: 5px;
 }
 
 .current-day {
